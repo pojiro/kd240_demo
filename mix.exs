@@ -37,6 +37,9 @@ defmodule Kd240Demo.MixProject do
       {:ring_logger, "~> 0.10.0"},
       {:toolshed, "~> 0.3.0"},
       {:muontrap, "~> 1.0"},
+      {:circuits_gpio, "~> 2.1"},
+      {:circuits_i2c, "~> 2.0"},
+      {:circuits_uart, "~> 1.5"},
 
       # Allow Nerves.Runtime on host to support development, testing and CI.
       # See config/host.exs for usage.
