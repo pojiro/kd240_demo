@@ -48,7 +48,19 @@ defmodule Kd240Demo.Application do
 
     if File.exists?(dfx_mgrd) do
       # nerves_system_kd240 provides `/lib/firmware` as tmpfs
-      [{MuonTrap.Daemon, [dfx_mgrd, [], [cd: "/lib/firmware"]]}]
+      [
+        {MuonTrap.Daemon,
+         [
+           dfx_mgrd,
+           [],
+           [
+             cd: "/lib/firmware",
+             stderr_to_stdout: true,
+             log_output: :debug,
+             log_prefix: "dfx-mgrd: "
+           ]
+         ]}
+      ]
     else
       []
     end
