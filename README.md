@@ -1,5 +1,7 @@
 # Kd240Demo
 
+![kd240](./assets/image/example.jpg)
+
 ## Confirm RS485
 
 For device setup, follow [Communication using RS485](https://xilinx.github.io/kria-apps-docs/kd240/build/html/docs/ros2_multinode_communication_via_tsn/src/app_deployment.html#communication-using-rs485).
