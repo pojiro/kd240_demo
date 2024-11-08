@@ -53,8 +53,9 @@ defmodule Kd240Demo.MixProject do
       # bumps to Nerves systems. Since these include Linux kernel and Erlang
       # version updates, please review their release notes in case
       # changes to your application are needed.
-      {:nerves_system_kd240,
-       path: "../nerves_system_kd240", runtime: false, targets: :kd240, nerves: [compile: true]}
+      # {:nerves_system_kd240,
+      #  path: "../nerves_system_kd240", runtime: false, targets: :kd240, nerves: [compile: true]}
+      {:nerves_system_kd240, "~> 0.1.0", runtime: false, targets: :kd240}
     ]
   end
 
